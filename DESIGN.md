@@ -48,8 +48,8 @@ Comparison is defined as:
 ```go
 func (a *HC) Compare(b *HC, decay float64) int {
 	anchor := a.Time // or any other anchor.
-	rank_a :=  a.LogC + (decay*a.Time-anchor)
-    rank_b :=  b.LogC + (decay*b.Time-anchor)
+	rank_a :=  a.LogC + (decay*(a.Time-anchor))
+	rank_b :=  b.LogC + (decay*(b.Time-anchor))
     
 	switch {
 	case rank_a<rank_b: return -1
