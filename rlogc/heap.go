@@ -93,8 +93,10 @@ func (r *RlogcHeap) EvictNode() (e *Element) {
 	return
 }
 
-// XXX: DEBUG
-//func (r *RlogcHeap) Len() int { return r.queue.Len() }
+/*
+Returns the number of elements on the heap.
+*/
+func (r *RlogcHeap) Len() int { return r.queue.Len() }
 
 /*
 Evicts the node from the RlogcHeap containing it.

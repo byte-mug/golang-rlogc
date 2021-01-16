@@ -18,6 +18,28 @@ import (
 	"math"
 )
 
+var decay05 = math.Log(0.5)
+
+/*
+Calculates the decay value for a given Half-life time.
+
+Half-life (symbol t½) is the time required for a quantity to reduce to half of
+its initial value. See also: https://en.wikipedia.org/wiki/Half-life
+
+The time unit of HL is the same as the time unit of the Timer in use.
+
+For example, if you want to have a Half-life time of one hour, and your Timer
+increments once every second - thus the time unit of your Timer is one second
+- you must specify the number of seconds of this hour: 3600. However, if your
+Timer's time unit is one millisecond, you must specify the number of
+milliseconds within an hour (3600000) in order to get a Half-life time of one
+hour.
+*/
+func GetDecayFromHalfLife(HL int64) float64 {
+	return decay05 / math.Abs(float64(HL))
+}
+
+
 /*
 A function that returns a monotinically increasing 64-bit integer.
 */
