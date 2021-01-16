@@ -1,4 +1,13 @@
+/*
+Copyright (C) 2021 Simon Schmidt
 
+This software is provided 'as-is', without any express or implied
+warranty.  In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+This software is licensed under the Creative Commons "CC0" public domain dedication.
+See LICENSE or <http://creativecommons.org/publicdomain/zero/1.0/> for full details.
+*/
 
 /*
 A simple, non-synchronized RlogC implementation.
