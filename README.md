@@ -1,6 +1,8 @@
 # golang-rlogc
 R+log(C) Cache policy. I am the author of this algorithm BTW.
 
+[![GoDoc](https://byte-mug.github.io/pkg/godoc-status.svg)](https://byte-mug.github.io/pkg/github.com/byte-mug/golang-rlogc/)
+
 ## Why another cache algorithm?
 
 I was annoyed of the lack of proper cache algorithms, so I invented my own.
